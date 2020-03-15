@@ -1,0 +1,1 @@
+For a detailed guide of setting up current API, please refer to README.md.

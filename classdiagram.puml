@@ -1,0 +1,38 @@
+@startuml
+
+class Player {
+	_lastKnocks
+	_rolls
+	_frameCount
+	_extraRolls
+
+	#constructor()
+	+roll(newKnocks)
+	+get rollingScore()
+	+get rolls()
+	+get frames()
+	+get isGameFinished()
+}
+
+class Game {
+	_players
+
+	#constructor()
+	+addPlayer(player)
+	+get players()
+}
+
+entity app {
+	(GET)
+	/
+	/availableGames
+	/rollingScore/:gameID/:playerID
+	/frame/:gameID/:playerID/:frameID
+	/calculateScore
+	--
+	(POST)
+	/init
+	/roll
+}
+
+@enduml

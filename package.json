@@ -1,0 +1,22 @@
+{
+  "name": "bowling",
+  "version": "1.0.0",
+  "description": "Bowling scoring API.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node app.js"
+  },
+  "author": "Ilia FILIN",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
